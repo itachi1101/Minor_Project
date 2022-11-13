@@ -3,22 +3,18 @@ import { BackHandler, ScrollView, StyleSheet, Text, View } from "react-native";
 import BillPaymentCard from "../../Components/BillPaymetCard";
 import CustomStatusCard from "../../Components/CustomStatusCard";
 
-export default function UserMainScreen(){
-    return(
+export default function UserMainScreen() {
+    return (
         <View style={styles.container} >
             <ScrollView horizontal={true} style={styles.scrollViewContainer}>
-                <CustomStatusCard/>
-                <BillPaymentCard/>
+                <CustomStatusCard />
                 <BillPaymentCard />
-                <BillPaymentCard />
-                <BillPaymentCard />
-
             </ScrollView>
         </View>
     )
 }
-const styles=StyleSheet.create({
-    container:{
+const styles = StyleSheet.create({
+    container: {
         width: "100%",
         height: "100%",
         display: "flex",
@@ -27,11 +23,9 @@ const styles=StyleSheet.create({
         backgroundColor: "#fff",
         paddingTop: StatusBar.currentHeight,
     },
-    scrollViewContainer:{
+    scrollViewContainer: {
         width: "100%",
         height: "80%",
         marginTop: 80,
-            
-
     }
 })
