@@ -6,7 +6,7 @@ export default function CustomStatusCard() {
 
     const today = `${date.getDate()}-${date.getMonth() + 1}-${date.getFullYear()}`
     return (
-        <View style={styles.container}>
+        <View style={[styles.container,styles.elevation]}>
             <View style={styles.dateContainer}>
                 <Text style={styles.dateText}>
                     <Text style={{color:"black"}}>DATE: </Text>
@@ -29,6 +29,12 @@ const styles = StyleSheet.create({
         padding: 20,
         width: 300,
         marginLeft: 30,
+        marginBottom:20,
+        marginTop:20
+    },
+    elevation:{
+        shadowColor:"#52006A",
+        elevation:30
     },
     dateContainer:{
 
